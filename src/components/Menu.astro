@@ -3,11 +3,3 @@
 <button aria-expanded="false" aria-controls="main-menu" class="menu">
   Menu
 </button>
-
-<script>
-  document.querySelector('.menu').addEventListener('click', () => {
-    const menu = document.querySelector('.menu');
-    const expanded = menu.getAttribute('aria-expanded') === 'true';
-    menu.setAttribute('aria-expanded', String(!expanded));
-  });
-</script>
